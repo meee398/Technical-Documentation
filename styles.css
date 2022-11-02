@@ -1,0 +1,136 @@
+:root {
+    font-family: 'Palatino', 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+#navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 14.5rem;
+    border-right: 2px solid black;
+}
+
+#navbar-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0.625rem
+}
+
+.navbar-content {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar a {
+    border-top: 2px solid black;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar a:last-of-type {
+    border-bottom: 2px solid black;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color:black;
+    background-color: bisque;
+    border: transparent;
+    border-radius: 5px;
+}
+
+a:active {
+    color: black;
+    background-color: antiquewhite;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 15rem;
+    margin-right: 1.75rem;
+}
+
+.heading {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+}
+
+code {
+    display: block;
+    text-align: left;
+    background-color: #EDECE8;
+    border: transparent;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width:600px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    :root {
+        font-size: 14px;
+    }
+
+    #navbar-heading {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.75rem 0.625rem
+    }
+
+    #main-doc {
+        margin-left: 10.5rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .section-heading {
+        font-size: 1.1rem;
+    }
+
+    #navbar {
+        max-width: 7rem;
+    }
+
+    #navbar-heading {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.75rem 0.625rem;
+    }
+
+    #navbar a {
+        padding: 10px 1rem;
+    }
+    
+    #main-doc {
+        margin-left: 7.25rem;
+    }
+}
